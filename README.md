@@ -53,6 +53,23 @@ environment variable prior to execution:
 NODE_PORT=8997 node server.js
 ```
 
+## Usage: Docker
+
+If you wish to use `rtc-switchboard` through a docker container
+then you can simply pull the public image from hub.docker.io and 
+run in the following way:
+
+```
+docker run synctree/rtc-switchboard
+```
+
+Defaults to 8080. If you wish to run the server on a specific port, then set the `NODE_PORT`
+environment variable prior to execution:
+
+```
+docker run -e NODE_PORT=8997 synctree/rtc-switchboard
+```
+
 ## Usage: API
 
 To create an application using switchboard signalling, see the following
